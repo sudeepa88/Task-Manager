@@ -52,9 +52,9 @@ class AddTaskViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(submitButton)
         
         NSLayoutConstraint.activate([
-            //addTaskTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            addTaskTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 130),
             addTaskTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            addTaskTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+           // addTaskTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             addTaskTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             addTaskTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             addTaskTextField.heightAnchor.constraint(equalToConstant: 40),
@@ -81,26 +81,6 @@ class AddTaskViewController: UIViewController, UITextFieldDelegate {
            
         
         print("This is user Account Name->",addTaskTextField.text!)
-        
-        
-        // CRUD : Create
-//                let person = People()
-//                person.accountName = accountNameTextField.text!
-//                person.emailID = emailTextField.text!
-//                person.passWord = hashedPassword
-//        
-//                do {
-//                    let realm = try Realm()
-//                    try realm.write {
-//                        realm.add(person)
-//                    }
-//                } catch {
-//                    print("Error Inilization new realm, \(error)")
-//                }
-//        
-//
-//        
-//        completionHandler?()
         
         
         // Create :-
